@@ -1,64 +1,484 @@
 {% extends 'base.html' %}
 
-{% block title %}Home | NG Packers and Movers{% endblock %}
+{% block title %}NG Packers and Movers | Home{% endblock %}
 
 {% block content %}
-<section class="bg-gradient-to-r from-sky-700 to-sky-600 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div class="max-w-3xl">
-            <span class="inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-medium text-sky-50 mb-6">
-                Trusted Relocation Services in Kenya
+
+<section id="home" class="relative overflow-hidden bg-slate-900 text-white">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 opacity-95"></div>
+
+    <div class="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8 lg:py-28">
+        <div>
+            <span class="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-500/10 px-4 py-1 text-sm font-medium text-emerald-300">
+                Trusted relocation services in Kenya
             </span>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Smooth, Secure, and Professional Moving Services
+
+            <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+                Smooth, Secure and Professional Moving Services
             </h1>
-            <p class="text-lg text-slate-300 leading-8 mb-8">
-                NG Packers and Movers helps families, offices, and businesses relocate with confidence.
-                Get instant quotations, book online, and track your relocation experience with ease.
+
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                NEW GENERATION PACKERS AND MOVERS helps families, individuals, and businesses relocate with ease.
+                Get an instant quotation, book your move online, and enjoy reliable service from a professional team.
             </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#" class="rounded-lg bg-white px-6 py-3 text-sky-700 font-semibold hover:bg-sky-50 transition shadow-lg">
+
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#quotation" class="rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-700">
                     Get Instant Quote
                 </a>
-                <a href="#" class="rounded-lg border border-sky-200 px-6 py-3 text-white font-semibold hover:bg-sky-800/30 transition">
+                <a href="#booking" class="rounded-xl border border-slate-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
                     Book a Move
+                </a>
+                <a href="tel:+254700000000" class="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">
+                    Call Us
+                </a>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <div class="rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-sm">
+                    <p class="text-2xl font-bold">Home</p>
+                    <p class="mt-1 text-sm text-slate-300">Relocation services</p>
+                </div>
+                <div class="rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-sm">
+                    <p class="text-2xl font-bold">Office</p>
+                    <p class="mt-1 text-sm text-slate-300">Business moving support</p>
+                </div>
+                <div class="rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-sm">
+                    <p class="text-2xl font-bold">Kenya</p>
+                    <p class="mt-1 text-sm text-slate-300">Local and regional coverage</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-700 bg-white/10 p-6 shadow-2xl backdrop-blur-md">
+            <div class="rounded-2xl bg-white p-6 text-slate-800 shadow-lg">
+                <p class="text-sm font-semibold uppercase tracking-wider text-emerald-600">
+                    Quick overview
+                </p>
+                <h2 class="mt-2 text-2xl font-bold text-slate-900">
+                    Why customers choose NG Packers & Movers
+                </h2>
+
+                <div class="mt-6 space-y-4">
+                    <div class="rounded-2xl bg-slate-50 p-4">
+                        <h3 class="font-semibold text-slate-900">Easy Booking</h3>
+                        <p class="mt-1 text-sm text-slate-600">
+                            Schedule your move online in a simple and convenient way.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl bg-slate-50 p-4">
+                        <h3 class="font-semibold text-slate-900">Instant Quotation</h3>
+                        <p class="mt-1 text-sm text-slate-600">
+                            Get a fast estimate for your relocation needs.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl bg-slate-50 p-4">
+                        <h3 class="font-semibold text-slate-900">Professional Handling</h3>
+                        <p class="mt-1 text-sm text-slate-600">
+                            We handle household and office items with care and professionalism.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#booking" class="mt-6 inline-flex rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                    Start Your Booking
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-slate-900">Why Choose Us</h2>
-            <p class="mt-3 text-slate-600 max-w-2xl mx-auto">
-                We combine logistics expertise, customer care, and technology to make relocation easier.
+
+<section id="about" class="bg-white py-20">
+    <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+            <span class="text-sm font-semibold uppercase tracking-wider text-emerald-600">About Us</span>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                A dependable moving partner for homes and businesses
+            </h2>
+            <p class="mt-6 text-base leading-8 text-slate-600">
+                NEW GENERATION PACKERS AND MOVERS is a Kenyan relocation company committed to making moving easier,
+                safer, and more organized. We support both residential and business clients with practical and
+                dependable relocation services.
+            </p>
+            <p class="mt-4 text-base leading-8 text-slate-600">
+                Our goal is to reduce stress during relocation by offering organized moving support, professional
+                handling, and convenient customer booking and quotation services through one simple platform.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="rounded-2xl bg-white p-8 shadow-sm border border-slate-200">
-                <h3 class="text-xl font-semibold mb-3">Online Booking</h3>
-                <p class="text-slate-600">
-                    Customers can book relocation services quickly from anywhere.
+        <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">Residential Moves</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                    Helping individuals and families relocate efficiently and with care.
                 </p>
             </div>
 
-            <div class="rounded-2xl bg-white p-8 shadow-sm border border-slate-200">
-                <h3 class="text-xl font-semibold mb-3">Instant Quotation</h3>
-                <p class="text-slate-600">
-                    Get pricing estimates for home and office moves in a simple way.
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">Business Relocation</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                    Smooth and structured office and commercial moving support.
                 </p>
             </div>
 
-            <div class="rounded-2xl bg-white p-8 shadow-sm border border-slate-200">
-                <h3 class="text-xl font-semibold mb-3">Secure Payments</h3>
-                <p class="text-slate-600">
-                    Easy and secure payment collection through M-Pesa integration.
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">Customer Convenience</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                    Online quotation and booking designed to make the process quick and simple.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">Professional Service</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                    A team focused on reliability, punctuality, and secure handling of property.
                 </p>
             </div>
         </div>
     </div>
 </section>
+
+
+<section id="services" class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+            <span class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Our Services</span>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Services tailored for modern relocation needs
+            </h2>
+            <p class="mt-4 text-base leading-8 text-slate-600">
+                We support different relocation needs for homes, offices, and businesses with flexible service options.
+            </p>
+        </div>
+
+        <div class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex rounded-2xl bg-emerald-100 px-4 py-3 text-emerald-700">
+                    📦
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900">Home Relocation</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Organized moving support for apartments, homes, and family relocations.
+                </p>
+            </div>
+
+            <div class="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex rounded-2xl bg-blue-100 px-4 py-3 text-blue-700">
+                    🏢
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900">Office Moving</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Reliable business and office relocation with minimal disruption.
+                </p>
+            </div>
+
+            <div class="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex rounded-2xl bg-amber-100 px-4 py-3 text-amber-700">
+                    🚚
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900">Loading & Transport</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Safe handling, loading, transportation, and delivery of your items.
+                </p>
+            </div>
+
+            <div class="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex rounded-2xl bg-purple-100 px-4 py-3 text-purple-700">
+                    🧰
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900">Packing Support</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Packing and organized arrangement support for a smoother move.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <span class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Why Choose Us</span>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Moving made easier through trust, structure, and speed
+            </h2>
+        </div>
+
+        <div class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-lg font-semibold text-slate-900">Professional Team</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Trained and organized staff ready to support your move.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-lg font-semibold text-slate-900">Timely Service</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    We value time and work toward smooth scheduling and punctual execution.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-lg font-semibold text-slate-900">Secure Handling</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Items are handled carefully from pickup to final delivery.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-lg font-semibold text-slate-900">Convenient Booking</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Customers can request quotes and book services with ease.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quotation Section -->
+<section id="quotation" class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+            <div>
+                <span class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Instant Quotation</span>
+                <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                    Request a quick estimate for your move
+                </h2>
+                <p class="mt-4 text-base leading-8 text-slate-600">
+                    Fill in your move details and receive a quotation based on your relocation needs.
+                    This section is ready for the actual quotation form logic next.
+                </p>
+
+                <div class="mt-8 rounded-3xl bg-slate-900 p-8 text-white">
+                    <h3 class="text-xl font-semibold">What affects the quotation?</h3>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                        <li>Pickup and destination location</li>
+                        <li>Type of move: home or office</li>
+                        <li>Size of property or quantity of items</li>
+                        <li>Extra services like packing and loading</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-200">
+                {% if quotation_submitted and quotation_result %}
+                    <div class="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800 shadow-sm">
+                        Your quotation was calculated successfully.
+                    </div>
+
+                    <div class="mb-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900">Estimated Quote</h3>
+                        <p class="mt-2 text-slate-600">
+                            This is a quick estimate based on the details you provided.
+                        </p>
+                        <p class="mt-4 text-3xl font-extrabold text-emerald-600">
+                            KES {{ quotation_result.estimated_amount }}
+                        </p>
+                        <p class="mt-2 text-sm text-slate-500">
+                            Final pricing may vary after confirmation of move details.
+                        </p>
+
+                        <a href="#booking" class="mt-4 inline-block rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                            Proceed to Booking
+                        </a>
+                    </div>
+                {% endif %}
+
+                {% if quotation_form.errors %}
+                    <div class="mb-6 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+                        Please correct the highlighted quotation fields and try again.
+                    </div>
+                {% endif %}
+
+                <form method="post" action="{% url 'submit_quotation' %}" class="space-y-6">
+                    {% csrf_token %}
+
+                    <div>
+                        <label for="{{ quotation_form.move_type.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Move Type
+                        </label>
+                        {{ quotation_form.move_type }}
+                    </div>
+
+                    <div>
+                        <label for="{{ quotation_form.pickup_location.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Pickup Location
+                        </label>
+                        {{ quotation_form.pickup_location }}
+                    </div>
+
+                    <div>
+                        <label for="{{ quotation_form.destination_location.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Destination Location
+                        </label>
+                        {{ quotation_form.destination_location }}
+                    </div>
+
+                    <div>
+                        <label for="{{ quotation_form.property_size.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Property Size
+                        </label>
+                        {{ quotation_form.property_size }}
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        {{ quotation_form.needs_packing }}
+                        <label for="{{ quotation_form.needs_packing.id_for_label }}" class="text-sm font-medium text-slate-700">
+                            Include packing service
+                        </label>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        {{ quotation_form.needs_unpacking }}
+                        <label for="{{ quotation_form.needs_unpacking.id_for_label }}" class="text-sm font-medium text-slate-700">
+                            Include unpacking service
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-full rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700">
+                        Calculate Estimate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="booking" class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+            <div>
+                <span class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Online Booking</span>
+                <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                    Book your relocation service online
+                </h2>
+                <p class="mt-4 text-base leading-8 text-slate-600">
+                    This section will become the main online booking form for NG Packers & Movers.
+                    We are setting the structure now so the backend can connect smoothly in the next step.
+                </p>
+
+                <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                        <h3 class="font-semibold text-slate-900">Choose a date</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Customers can select the most suitable moving date.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                        <h3 class="font-semibold text-slate-900">Share move details</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Pickup point, destination, and move instructions.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                        <h3 class="font-semibold text-slate-900">Track status</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            Later this will link to booking confirmation and updates.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                        <h3 class="font-semibold text-slate-900">Easy payment</h3>
+                        <p class="mt-2 text-sm text-slate-600">
+                            M-Pesa integration will be connected after booking is in place.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rounded-3xl bg-slate-50 p-8 shadow-lg ring-1 ring-slate-200">
+                {% if booking_submitted %}
+                    <div class="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800 shadow-sm">
+                        Your booking request has been submitted successfully. Our team will contact you soon.
+                    </div>
+                {% endif %}
+
+                {% if booking_form.errors %}
+                    <div class="mb-6 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+                        Please correct the highlighted booking fields and try again.
+                    </div>
+                {% endif %}
+                {% if booking_form.errors %}
+                    <div class="mb-6 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+                        Please correct the highlighted booking fields and try again.
+                    </div>
+                {% endif %}
+                <form method="post" action="{% url 'submit_booking' %}" class="grid gap-6 md:grid-cols-2">
+                    {% csrf_token %}
+
+                    <div class="md:col-span-2">
+                        <label for="{{ booking_form.full_name.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Full Name
+                        </label>
+                        {{ booking_form.full_name }}
+                    </div>
+
+                    <div>
+                        <label for="{{ booking_form.phone_number.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Phone Number
+                        </label>
+                        {{ booking_form.phone_number }}
+                    </div>
+
+                    <div>
+                        <label for="{{ booking_form.email.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Email Address
+                        </label>
+                        {{ booking_form.email }}
+                    </div>
+
+                    <div>
+                        <label for="{{ booking_form.move_date.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Move Date
+                        </label>
+                        {{ booking_form.move_date }}
+                    </div>
+
+                    <div>
+                        <label for="{{ booking_form.move_type.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Move Type
+                        </label>
+                        {{ booking_form.move_type }}
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label for="{{ booking_form.pickup_location.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Pickup Location
+                        </label>
+                        {{ booking_form.pickup_location }}
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label for="{{ booking_form.destination_location.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Destination Location
+                        </label>
+                        {{ booking_form.destination_location }}
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label for="{{ booking_form.special_instructions.id_for_label }}" class="mb-2 block text-sm font-medium text-slate-700">
+                            Special Instructions
+                        </label>
+                        {{ booking_form.special_instructions }}
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <button type="submit" class="w-full rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                            Submit Booking Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

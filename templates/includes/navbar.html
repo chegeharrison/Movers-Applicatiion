@@ -1,21 +1,69 @@
-<nav class="bg-sky-700 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
-            <div>
-                <a href="/" class="text-2xl font-bold tracking-wide">
-                    NG Packers & Movers
-                </a>
-                <p class="text-sm text-slate-300">Reliable Home & Business Relocation</p>
+<nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur shadow-sm">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#home" class="flex items-center gap-3">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-900 text-lg font-bold text-white shadow-md">
+                NG
             </div>
+            <div>
+                <p class="text-base font-extrabold tracking-tight text-slate-900 sm:text-lg">
+                    NG Packers & Movers
+                </p>
+                <p class="text-xs text-slate-500 sm:text-sm">
+                    Reliable Relocation Services in Kenya
+                </p>
+            </div>
+        </a>
 
-            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
-                <a href="/" class="hover:text-emerald-400 transition">Home</a>
-                <a href="#" class="hover:text-emerald-400 transition">About</a>
-                <a href="#" class="hover:text-emerald-400 transition">Services</a>
-                <a href="#" class="hover:text-emerald-400 transition">Quotation</a>
-                <a href="#" class="hover:text-emerald-400 transition">Booking</a>
-                <a href="#" class="hover:text-emerald-400 transition">Contact</a>
-                <a href="#" class="inline-flex items-center rounded-lg bg-white text-sky-700 px-4 py-2 text-white hover:hover:bg-sky-50 transition shadow">
+        <div class="hidden items-center gap-8 lg:flex">
+            <a href="#home" class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Home</a>
+            <a href="#about" class="text-sm font-medium text-slate-700 transition hover:text-slate-900">About</a>
+            <a href="#services" class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Services</a>
+            <a href="#quotation" class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Quotation</a>
+            <a href="#booking" class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Booking</a>
+            <a href="#contact" class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Contact</a>
+        </div>
+
+        <div class="hidden items-center gap-3 lg:flex">
+            <a href="tel:+254700000000"
+               class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:bg-slate-100">
+                Call Us
+            </a>
+            <a href="#booking"
+               class="rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-emerald-700">
+                Book Now
+            </a>
+        </div>
+
+        <button
+            id="mobile-menu-button"
+            type="button"
+            class="inline-flex items-center justify-center rounded-xl border border-slate-300 p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+        >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white lg:hidden">
+        <div class="space-y-1 px-4 py-4 sm:px-6">
+            <a href="#home" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Home</a>
+            <a href="#about" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">About</a>
+            <a href="#services" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Services</a>
+            <a href="#quotation" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Quotation</a>
+            <a href="#booking" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Booking</a>
+            <a href="#contact" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+
+            <div class="mt-4 grid gap-3 pt-3">
+                <a href="tel:+254700000000"
+                   class="rounded-xl border border-slate-300 px-4 py-3 text-center text-sm font-semibold text-slate-800 hover:bg-slate-100">
+                    Call Us
+                </a>
+                <a href="#booking"
+                   class="rounded-xl bg-emerald-600 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-700">
                     Book Now
                 </a>
             </div>
