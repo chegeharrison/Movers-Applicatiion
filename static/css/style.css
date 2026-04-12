@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #222;
+}
+
+nav {
+    background: #003366;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+nav h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.messages {
+    background: #e6f4ea;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b7dfc2;
+}
